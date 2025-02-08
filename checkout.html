@@ -56,70 +56,76 @@
 
 
     </header>
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <p class="h4 p-5 mx-6 ">Nuovo Libro</p>
 
-
-        
-    </div>
     <!-- inizio tabella -->
-    
-    <form class="row px-5">
-        <div class="col-5">
-        <label for="inputNomeautore3" class="form-label">Nome Autore</label>
-        <input type="text" id="inputNomeautore3" class="form-control" placeholder="inserisci nome autore">
-        </div>
-    
-    
-        <div class="col-5">
+    <div class="container-fluid mt-5 pt-3">
+        <h4 class="mb-4 mx-5">Nuovo Libro</h4>
 
-       <label for="inputNCognomeautore3" class="form-label">Cognome Autore</label>
-        <input type="text" id="inputCognomeautore3" class="form-control" placeholder="Inserisci cognome autore">
-        </div>
 
-     <div class="col-12 my-4">
-        <label for=" Input titolo" class="form-label">Titolo</label>
-        <input type="text" id="inputtitolo" class="form-control" placeholder="Inserisci titolo del libro">
-        <div class="form-test">Titolo versione italiana </div>
-     </div>
+        <form class="row px-5">
+            <div class="col-md-6">
+                <label for="inputNomeautore3" class="form-label">Nome Autore</label>
+                <input type="text" id="inputNomeautore3" class="form-control" placeholder="inserisci nome autore">
+            </div>
 
-     <div class="col-md-4">
-        <label for="genere" class="form-label">Genere</label>
-        <select class="form-select" id="genere">
-            <option selected>Scegli il genere</option>
-            <option value="1">Narrativa</option>
-            <option value="2">Saggistica</option>
-            <option value="3">Fantascienza</option>
-            <option value="4">Altro</option>
-        </select>
+
+            <div class="col-md-6">
+
+                <label for="inputCognomeautore3" class="form-label">Cognome Autore</label>
+                <input type="text" id="inputCognomeautore3" class="form-control" placeholder="Inserisci cognome autore">
+            </div>
+
+            <div class="col-12 my-4">
+                <label for="Inputtitolo" class="form-label">Titolo</label>
+                <input type="text" id="inputtitolo" class="form-control" placeholder="Inserisci titolo del libro">
+                <div class="form-test">Titolo versione italiana </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="genere" class="form-label">Genere</label>
+                <select class="form-select" id="genere">
+                    <option selected>Scegli il genere</option>
+                    <option value="1">Narrativa</option>
+                    <option value="2">Saggistica</option>
+                    <option value="3">Fantascienza</option>
+                    <option value="4">Altro</option>
+                </select>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <label for="annodipublicazione" class="form-label">Anno di pubblicazione</label>
+                <input type="text" id="annodipublicazione" class="form-control"
+                    placeholder="inserisci anno di pubblicazione">
+            </div>
+
+            <div class="col-md-4">
+                <label for="ISBN" class="form-label">ISBN#</label>
+                <input type="text" id="ISBN" class="form-control" placeholder="inserisci il codice ISBN#">
+            </div>
+            <div class="mb-3 p-3">
+
+                <hr />
+                <label for="note" class="form-label">Note</label>
+                <textarea class="form-control" id="note" rows="3"
+                    placeholder="Inserisci eventuali note sul libro"></textarea>
+            </div>
+
+            <div class="pt-1">
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel"
+                    value="Disponibile anche in digitale" aria-label="Disponibile anche in digitale">
+                Disponibile anche in digitale
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary mt-3">Aggiungi il libro</button>
+            </div>
+
+        </form>
+
     </div>
 
-   
 
-     <div class="col-4">
-       <label for="annodipublicazione" class="form-label" >Anno di pubblicazione</label>
-       <input type="text" id="annodipublicazione" class="form-control" placeholder="inserisci anno di pubblicazione">
-     </div>
-
-     <div class="col-4">
-        <label for="ISBN" class="form-label" >ISBN#</label>
-        <input type="text" id="ISBN" class="form-control" placeholder="inserisci il codice ISBN#">
-      </div>
-      <div class="mb-3">
-        <label for="note" class="form-label">Note</label>
-        <textarea class="form-control" id="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
-    </div>
-
-    <div>
-        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Disponibile anche in digitale" aria-label="Disponibile anche in digitale">
-    Disponibile anche in digitale  
-    </div>
-    <div>
-    <button type="button" class="btn btn-primary">Aggiungi il libro</button>
-    </div>
-
-    </form>
-    
 
 
 </body>
